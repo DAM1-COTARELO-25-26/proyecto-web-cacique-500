@@ -1,18 +1,69 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Proyecto HTML y CSS - Lenguajes de Marcas (1º DAM)">
-  <title>Grupo 3 - Proyecto Web</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  type="text/css" href="estilos.css">
+<title>Tienda de Alcohol</title>
 </head>
 <body>
-  <main>
-    <h1>Grupo 3 – GGrupo formado por Gerardo Baltar Morales y José Ramón Lorenzo Álvarez.
-Haciendo códigos como caciques, más de 500 días de experiencia en el sector.</h1>
-    <h2>Proyecto Web · 1º DAM</h2>
-    <p>IES Armando Cotarelo Valledor · Lenguajes de Marcas</p>
-  </main>
+    <div id="age-gate">
+        <h2>Confirma tu edad</h2>
+        <p>Debes ser mayor de 18 años para acceder.</p>
+    
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input type="date" id="birthdate" required>
+    
+        <button onclick="checkAge()">Verificar</button>
+    
+        <p id="message" style="color: red;"></p>
+    </div>
+<header>
+<h1>Tienda de Alcohol</h1>
+<nav>
+<ul>
+    <li><a href="#ventas">Promociones</a></li>
+    <li><a href="#exclusivos">Nuestros Licores Gallegos</a></li>
+    <li><a href="#alcoholes">Alcoholes Variados</a></li>
+    <li><a href="#contacto">Contactanos</a></li>
+</ul>
+</nav>
+</header>
+
+
+<main>
+<section id="ventas">
+<h2>Promociones</h2>
+<p>Aqui seria nuestra seccion de promociones como por ejemplo dos botellas de barcelo y una de vodka por 30 euros.</p>
+</section>
+
+
+<section id="exclusivos">
+<h2>Nuestros Licores Exclusivos Gallegos</h2>
+<p>Aqui pondremos nuestro catalago de diferentes licores gallegos que tendremos en la tienda, como licor cafe, crema de orujo...</p>
+</section>
+
+
+<section id="alcoholes">
+<h2>Diferentes Alcoholes Variados</h2>
+<ul>
+    <li>Barceló</li>
+    <li>Bacardí</li>
+    <li>Vodka</li>
+    <li>Whisky</li>
+</ul>
+</section>
+
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p>cacique500@gmail.com</p>
+</section>
+</main>
+
+
+<footer>
+<p>© 2025 Tienda de Alcohol. Prohibida la venta a menores de 18 años.</p>
+</footer>
 </body>
 </html>
