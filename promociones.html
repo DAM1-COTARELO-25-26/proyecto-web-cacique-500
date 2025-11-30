@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tienda de Alcohol - Promociones</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <h1 class="logo"> Tienda de Alcohol</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#oferta-detalle">Promociones</a></li>
+                    <li><a href="variados.html">Alcoholes Variados</a></li> 
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="oferta-detalle" class="section-card" style="text-align: center;">
+            <h2> Oferta del Mes: ¡Pack Fiesta!</h2>
+            <div class="offer-details" style="display: flex; justify-content: center; gap: 40px; margin: 30px 0;">
+                <div class="offer-item">
+                    <h3>2x Ron Barceló</h3>
+                    <p>Botella 70cl Añejo</p>
+                </div>
+                <div class="offer-item">
+                    <h3>1x Vodka Absolut</h3>
+                    <p>Botella 70cl Original</p>
+                </div>
+            </div>
+            
+            <p style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">Precio Final: 30€</p>
+
+            <form class="purchase-form">
+                <input type="number" placeholder="Cantidad" value="1" min="1" style="padding: 10px; border-radius: 4px; border: 1px solid #ccc; width: 100px; margin-right: 15px;">
+                <button class="btn-primary" type="submit" style="width: auto;">Añadir al Carrito</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 Cazique-500. Prohibida la venta a menores de 18 años.</p>
+    </footer>
+</body>
+</html>
