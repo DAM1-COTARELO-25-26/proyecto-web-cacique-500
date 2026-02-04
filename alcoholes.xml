@@ -1,0 +1,60 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<tienda_alcohol>
+    <alcoholes categoría ="no-premium">
+        <rones>
+            <Barceló precio ="14.99€">
+                
+            </Barceló>
+
+            <Cazique precio="13.99€">
+
+            </Cazique>
+
+            <Bumbú precio="19.99€">
+
+            </Bumbú>
+
+            <Old_harper precio="4.99€">
+
+            </Old_harper>
+
+            <La_Recompensa precio="7.99€">
+
+            </La_Recompensa>
+
+            <Santa_Teresa precio="13.99€">
+
+            </Santa_Teresa>
+        </rones>
+    </alcoholes>
+
+    <alcoholes categoría="premium">
+
+        <rones>
+            <Barceló_Imperial precio ="29.99€">
+                
+            </Barceló_Imperial>
+
+            <Cazique_500 precio="27.99€">
+
+            </Cazique_500>
+
+            <Bumbú_Dark precio="29.99€">
+
+            </Bumbú_Dark>
+
+            <Havana_Club precio="22.99€">
+
+            </Havana_Club>
+
+            <La_Santísima_Trinidad precio="39.99€">
+
+            </La_Santísima_Trinidad>
+
+            <Santa_Teresa_1976 precio="23.99€">
+
+            </Santa_Teresa_1976>
+        </rones>
+    </alcoholes>
+</tienda_alcohol>
