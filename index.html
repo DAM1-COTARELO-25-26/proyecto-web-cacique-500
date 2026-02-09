@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -9,19 +10,6 @@
 </head>
 <body>
 
-    <div id="age-gate" class="modal-overlay">
-        <div class="modal-content">
-            <h2>🔞 Confirma tu edad</h2>
-            <p>Debes ser mayor de 18 años para acceder a este sitio.</p>
-            
-            <form id="age-form">
-                <label for="birthdate">Fecha de nacimiento:</label>
-                <input type="date" id="birthdate" required>
-                <button type="button" onclick="checkAge()">Verificar Acceso</button>
-            </form>
-            <p id="message"></p>
-        </div>
-    </div>
 
     <header class="main-header">
         <div class="container header-flex">
@@ -72,10 +60,15 @@
         <p>© 2025 Cazique-500. Prohibida la venta a menores de 18 años.</p>
     </footer>
 
+   
+
     <script>
-        function checkAge() {
-            document.getElementById('age-gate').style.display = 'none';
+        // Si no existe la clave 'ageVerified', ir a age.html
+        if (!localStorage.getItem("ageVerified")) {
+            window.location.href = "age.html";
         }
     </script>
+        
+        
 </body>
 </html>
