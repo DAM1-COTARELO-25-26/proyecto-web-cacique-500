@@ -27,6 +27,62 @@
 
             </Santa_Teresa>
         </rones>
+
+        <Whiskey>
+            <Red_Label precio ="14.99€">
+                
+            </Red_Label>
+
+            <Ballantains precio="12.99€">
+
+            </Ballantains>
+
+            <Almirate precio="2.99€">
+
+            </Almirate>
+
+            <Matt_Ken precio="6.99€">
+
+            </Matt_Ken>
+
+            <100Pipers precio="12.99€">
+
+            </100Pipers>
+
+            <Black_Elephant precio="4.99€">
+
+            </Black_Elephant>
+        </Whiskey>
+
+
+        <Licores_Gallegos>
+            <Licorca precio ="14.99€">
+                
+            </Licorca>
+
+            <Crema_de_Orujo precio="7.99€">
+
+            </Crema_de_Orujo>
+
+            <Crema_de_Whiskey precio="9.99€">
+
+            </Crema_de_Whiskey>
+
+            <Crema_de_Chocolate precio="15.99€">
+
+            </Crema_de_Chocolate>
+
+            <Licor_de_Hierbas precio="8.99€">
+
+            </Licor_de_Hierbas>
+
+            <Licor_de_Cereza precio="23.99€">
+
+            </Licor_de_Cereza>
+        </Licores_Gallegos>
+
+
+
     </alcoholes>
 
     <alcoholes categoría="premium">
@@ -56,5 +112,34 @@
 
             </Santa_Teresa_1976>
         </rones>
+
+
+
+        <Whiskey>
+            <Black_Label precio ="29.99€">
+                
+            </Black_Label>
+
+            <Jack_Daniels precio="20.99€">
+
+            </Jack_Daniels>
+
+            <Jack_Daniels_Honey precio="20.99€">
+
+            </Jack_Daniels_Honey>
+
+            <Green_Label precio="66.99€">
+
+            </Green_Label>
+
+            <Blue_Label precio="199.99€">
+
+            </Blue_Label>
+
+            <Cardú precio="39.99€">
+
+            </Cardú>
+        </Whiskey>
+
     </alcoholes>
 </tienda_alcohol>
