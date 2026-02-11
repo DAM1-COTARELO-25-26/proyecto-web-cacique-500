@@ -1,145 +1,144 @@
 <?xml version="1.1" encoding="UTF-8"?>
 
 <tienda_alcohol>
-    <alcoholes categoría ="no-premium">
-        <rones>
-            <Barceló precio ="14.99€">
-                
-            </Barceló>
+    <alcoholes>
+        <alcohol_no_premium>
+            <rones>
+                <Barceló precio="14.99€" disponible="TRUE">
+                    Ron dominicano suave y equilibrado, con notas dulces y ligeros matices de vainilla. Ideal para combinados.
+                </Barceló>
+                <Cazique precio="13.99€" disponible="TRUE">
+                    Ron versátil de sabor ligero y agradable, perfecto para cócteles clásicos y mezclas refrescantes.
+                </Cazique>
+                <Bumbú precio="19.99€" disponible="TRUE">
+                    Ron aromático con toques especiados y dulces, ideal para disfrutar solo o con hielo.
+                </Bumbú>
+                <Old_harper precio="4.99€" disponible="FALSE">
+                    Ron económico de sabor suave, pensado para combinaciones sencillas y consumo informal.
+                </Old_harper>
+                <La_Recompensa precio="FALSE">
+                    Ron equilibrado con notas dulces y ligeras de madera, excelente para mezclas.
+                </La_Recompensa>
+                <Santa_Teresa precio="FALSE">
+                    Ron venezolano de cuerpo medio, con notas suaves de caramelo y madera.
+                </Santa_Teresa>
+            </rones>
 
-            <Cazique precio="13.99€">
+            <Whiskey>
+                <Red_Label precio="14.99€" disponible="TRUE">
+                    Whisky escocés intenso y vibrante, con notas ahumadas y especiadas.
+                </Red_Label>
+                <Ballantains precio="12.99€" disponible="TRUE">
+                    Whisky suave y equilibrado, con toques de miel y vainilla.
+                </Ballantains>
+                <Almirate precio="2.99€" disponible="TRUE">
+                    Whisky ligero y accesible, ideal para mezclar.
+                </Almirate>
+                <Matt_Ken precio="6.99€" disponible="FALSE">
+                    Whisky suave de sabor sencillo, perfecto para combinados económicos.
+                </Matt_Ken>
+                <100Pipers precio="12.99€" disponible="TRUE">
+                    Whisky escocés con carácter afrutado y final ligeramente ahumado.
+                </100Pipers>
+                <Black_Elephant precio="4.99€" disponible="TRUE">
+                    Whisky suave con notas dulces y ligeros matices tostados.
+                </Black_Elephant>
+            </Whiskey>
 
-            </Cazique>
+            <Licores_Gallegos>
+                <Licorca precio="14.99€" disponible="TRUE">
+                    Licor tradicional gallego con sabor dulce y aromático.
+                </Licorca>
+                <Crema_de_Orujo precio="7.99€" disponible="TRUE">
+                    Crema suave y dulce con base de orujo, perfecta como digestivo.
+                </Crema_de_Orujo>
+                <Crema_de_Whiskey precio="9.99€" disponible="TRUE">
+                    Licor cremoso con sabor a whisky y notas de caramelo.
+                </Crema_de_Whiskey>
+                <Crema_de_Chocolate precio="15.99€" disponible="TRUE">
+                    Licor dulce y cremoso con intenso sabor a chocolate.
+                </Crema_de_Chocolate>
+                <Licor_de_Hierbas precio="8.99€" disponible="TRUE">
+                    Licor tradicional gallego con mezcla aromática de hierbas.
+                </Licor_de_Hierbas>
+                <Licor_de_Cereza precio="23.99€" disponible="TRUE">
+                    Licor afrutado con sabor intenso y dulce a cereza.
+                </Licor_de_Cereza>
+            </Licores_Gallegos>
 
-            <Bumbú precio="19.99€">
+            <ginebra>
+                <Dagger precio="1.99€" disponible="TRUE"> 
+                    Ginebra de terrible sabor, es recomendado no temer a la muerte, esta opción solo ha de tomarse cuando no queda otra.
+                </Dagger>
+                <Beefeater precio="11.99€" disponible="FALSE">
+                    Clásica ginebra londinense, seca y equilibrada con notas cítricas.
+                </Beefeater>
+                <Larios precio="6.99€" disponible="TRUE">
+                    Ginebra mediterránea, fresca y suave, con toques cítricos.
+                </Larios>
+                <Glivery precio="7.99€" disponible="FALSE">
+                    Ginebra aromática de perfil suave, perfecta para gin-tonics.
+                </Glivery>
+            </ginebra>
+        </alcohol_no_premium>
 
-            </Bumbú>
+        <alcohol_premium>
+            <rones>
+                <Barceló_Imperial precio="29.99€" disponible="TRUE">
+                    Ron premium dominicano, envejecido en barrica, con notas de vainilla y frutos secos.
+                </Barceló_Imperial>
+                <Cazique_500 precio="27.99€" disponible="TRUE">
+                    Ron venezolano elegante y complejo, con notas intensas de madera y especias.
+                </Cazique_500>
+                <Bumbú_Dark precio="29.99€" disponible="TRUE">
+                    Ron oscuro premium con carácter especiado y notas dulces profundas.
+                </Bumbú_Dark>
+                <Havana_Club precio="22.99€" disponible="TRUE">
+                    Ron cubano añejo, equilibrado y aromático, ideal para disfrutar solo o en cócteles.
+                </Havana_Club>
+                <La_Santísima_Trinidad precio="39.99€" disponible="TRUE">
+                    Ron cubano exclusivo, suave y refinado con notas de roble y caramelo.
+                </La_Santísima_Trinidad>
+                <Santa_Teresa_1976 precio="23.99€" disponible="TRUE">
+                    Ron venezolano premium, complejo y elegante con notas de frutos secos y madera.
+                </Santa_Teresa_1976>
+            </rones>
 
-            <Old_harper precio="4.99€">
+            <Whiskey>
+                <Black_Label precio="29.99€" disponible="TRUE">
+                    Whisky escocés de gran equilibrio, con notas ahumadas y toque de fruta madura.
+                </Black_Label>
+                <Jack_Daniels precio="20.99€" disponible="TRUE"> 
+                    Whiskey americano suave con notas de vainilla y caramelo.
+                </Jack_Daniels>
+                <Jack_Daniels_Honey precio="20.99€" disponible="TRUE">
+                    Variante dulce con miel natural y suave toque de whiskey.
+                </Jack_Daniels_Honey>
+                <Green_Label precio="66.99€" disponible="TRUE">
+                    Whisky escocés de malta pura, intenso y complejo.
+                </Green_Label>
+                <Blue_Label precio="199.99€" disponible="TRUE">
+                    Whisky escocés ultra premium, sofisticado y excepcionalmente suave.
+                </Blue_Label>
+                <Cardú precio="39.99€" disponible="TRUE">
+                    Single malt escocés elegante, con notas afrutadas y final suave.
+                </Cardú>
+            </Whiskey>
 
-            </Old_harper>
-
-            <La_Recompensa precio="7.99€">
-
-            </La_Recompensa>
-
-            <Santa_Teresa precio="13.99€">
-
-            </Santa_Teresa>
-        </rones>
-
-        <Whiskey>
-            <Red_Label precio ="14.99€">
-                
-            </Red_Label>
-
-            <Ballantains precio="12.99€">
-
-            </Ballantains>
-
-            <Almirate precio="2.99€">
-
-            </Almirate>
-
-            <Matt_Ken precio="6.99€">
-
-            </Matt_Ken>
-
-            <100Pipers precio="12.99€">
-
-            </100Pipers>
-
-            <Black_Elephant precio="4.99€">
-
-            </Black_Elephant>
-        </Whiskey>
-
-
-        <Licores_Gallegos>
-            <Licorca precio ="14.99€">
-                
-            </Licorca>
-
-            <Crema_de_Orujo precio="7.99€">
-
-            </Crema_de_Orujo>
-
-            <Crema_de_Whiskey precio="9.99€">
-
-            </Crema_de_Whiskey>
-
-            <Crema_de_Chocolate precio="15.99€">
-
-            </Crema_de_Chocolate>
-
-            <Licor_de_Hierbas precio="8.99€">
-
-            </Licor_de_Hierbas>
-
-            <Licor_de_Cereza precio="23.99€">
-
-            </Licor_de_Cereza>
-        </Licores_Gallegos>
-
-
-
-    </alcoholes>
-
-    <alcoholes categoría="premium">
-
-        <rones>
-            <Barceló_Imperial precio ="29.99€">
-                
-            </Barceló_Imperial>
-
-            <Cazique_500 precio="27.99€">
-
-            </Cazique_500>
-
-            <Bumbú_Dark precio="29.99€">
-
-            </Bumbú_Dark>
-
-            <Havana_Club precio="22.99€">
-
-            </Havana_Club>
-
-            <La_Santísima_Trinidad precio="39.99€">
-
-            </La_Santísima_Trinidad>
-
-            <Santa_Teresa_1976 precio="23.99€">
-
-            </Santa_Teresa_1976>
-        </rones>
-
-
-
-        <Whiskey>
-            <Black_Label precio ="29.99€">
-                
-            </Black_Label>
-
-            <Jack_Daniels precio="20.99€">
-
-            </Jack_Daniels>
-
-            <Jack_Daniels_Honey precio="20.99€">
-
-            </Jack_Daniels_Honey>
-
-            <Green_Label precio="66.99€">
-
-            </Green_Label>
-
-            <Blue_Label precio="199.99€">
-
-            </Blue_Label>
-
-            <Cardú precio="39.99€">
-
-            </Cardú>
-        </Whiskey>
-
+            <ginebra>
+                <hendriks precio="39.99€" disponible="FALSE">
+                    Ginebra premium con infusión de pepino y rosa, fresca y aromática.
+                </hendriks>
+                <Bulldog precio="24.00€" disponible="FALSE">
+                    Ginebra moderna con perfil especiado y elegante.
+                </Bulldog>
+                <Martin_Millers precio="32.00€" disponible="TRUE">
+                    Ginebra artesanal suave y equilibrada, con notas cítricas limpias.
+                </Martin_Millers>
+                <The_London precio="37.99€" disponible="FALSE">
+                    Ginebra premium estilo London Dry, intensa y refinada.
+                </The_London>
+            </ginebra>
+        </alcohol_premium>
     </alcoholes>
 </tienda_alcohol>
