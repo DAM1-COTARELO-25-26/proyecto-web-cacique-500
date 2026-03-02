@@ -1,25 +1,26 @@
 <?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE tienda_alcohol SYSTEM "tienda.dtd">
 
 <tienda_alcohol>
     <alcoholes>
         <alcohol_no_premium>
             <rones>
-                <Barceló precio="14.99€" disponible="TRUE">
+                <Barcelo precio="14.99€" disponible="TRUE">
                     Ron dominicano suave y equilibrado, con notas dulces y ligeros matices de vainilla. Ideal para combinados.
-                </Barceló>
+                </Barcelo>
                 <Cazique precio="13.99€" disponible="TRUE">
                     Ron versátil de sabor ligero y agradable, perfecto para cócteles clásicos y mezclas refrescantes.
                 </Cazique>
-                <Bumbú precio="19.99€" disponible="TRUE">
+                <Bumbu precio="19.99€" disponible="TRUE">
                     Ron aromático con toques especiados y dulces, ideal para disfrutar solo o con hielo.
-                </Bumbú>
+                </Bumbu>
                 <Old_harper precio="4.99€" disponible="FALSE">
                     Ron económico de sabor suave, pensado para combinaciones sencillas y consumo informal.
                 </Old_harper>
-                <La_Recompensa precio="FALSE">
+                <La_Recompensa precio="5.99€" disponible="FALSE">
                     Ron equilibrado con notas dulces y ligeras de madera, excelente para mezclas.
                 </La_Recompensa>
-                <Santa_Teresa precio="FALSE">
+                <Santa_Teresa precio="8.99€" disponible="TRUE">
                     Ron venezolano de cuerpo medio, con notas suaves de caramelo y madera.
                 </Santa_Teresa>
             </rones>
@@ -37,9 +38,9 @@
                 <Matt_Ken precio="6.99€" disponible="FALSE">
                     Whisky suave de sabor sencillo, perfecto para combinados económicos.
                 </Matt_Ken>
-                <100Pipers precio="12.99€" disponible="TRUE">
+                <Pipers_100 precio="12.99€" disponible="TRUE">
                     Whisky escocés con carácter afrutado y final ligeramente ahumado.
-                </100Pipers>
+                </Pipers_100>
                 <Black_Elephant precio="4.99€" disponible="TRUE">
                     Whisky suave con notas dulces y ligeros matices tostados.
                 </Black_Elephant>
@@ -84,21 +85,21 @@
 
         <alcohol_premium>
             <rones>
-                <Barceló_Imperial precio="29.99€" disponible="TRUE">
+                <Barcelo_Imperial precio="29.99€" disponible="TRUE">
                     Ron premium dominicano, envejecido en barrica, con notas de vainilla y frutos secos.
-                </Barceló_Imperial>
+                </Barcelo_Imperial>
                 <Cazique_500 precio="27.99€" disponible="TRUE">
                     Ron venezolano elegante y complejo, con notas intensas de madera y especias.
                 </Cazique_500>
-                <Bumbú_Dark precio="29.99€" disponible="TRUE">
+                <Bumbu_Dark precio="29.99€" disponible="TRUE">
                     Ron oscuro premium con carácter especiado y notas dulces profundas.
-                </Bumbú_Dark>
+                </Bumbu_Dark>
                 <Havana_Club precio="22.99€" disponible="TRUE">
                     Ron cubano añejo, equilibrado y aromático, ideal para disfrutar solo o en cócteles.
                 </Havana_Club>
-                <La_Santísima_Trinidad precio="39.99€" disponible="TRUE">
+                <La_Santisima_Trinidad precio="39.99€" disponible="TRUE">
                     Ron cubano exclusivo, suave y refinado con notas de roble y caramelo.
-                </La_Santísima_Trinidad>
+                </La_Santisima_Trinidad>
                 <Santa_Teresa_1976 precio="23.99€" disponible="TRUE">
                     Ron venezolano premium, complejo y elegante con notas de frutos secos y madera.
                 </Santa_Teresa_1976>
@@ -120,15 +121,15 @@
                 <Blue_Label precio="199.99€" disponible="TRUE">
                     Whisky escocés ultra premium, sofisticado y excepcionalmente suave.
                 </Blue_Label>
-                <Cardú precio="39.99€" disponible="TRUE">
+                <Cardu precio="39.99€" disponible="TRUE">
                     Single malt escocés elegante, con notas afrutadas y final suave.
-                </Cardú>
+                </Cardu>
             </Whiskey>
 
             <ginebra>
-                <hendriks precio="39.99€" disponible="FALSE">
+                <Hendriks precio="39.99€" disponible="FALSE">
                     Ginebra premium con infusión de pepino y rosa, fresca y aromática.
-                </hendriks>
+                </Hendriks>
                 <Bulldog precio="24.00€" disponible="FALSE">
                     Ginebra moderna con perfil especiado y elegante.
                 </Bulldog>
