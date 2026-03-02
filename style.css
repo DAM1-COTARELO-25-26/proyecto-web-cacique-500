@@ -57,9 +57,12 @@ h1, h2, h3 {
 }
 
 .logo {
-    font-size: 1.8rem;
-    color: var(--accent-color);
+ 
+
+    height: 40px; 
+    width: auto;  
 }
+
 
 .main-nav ul {
     display: flex; 
