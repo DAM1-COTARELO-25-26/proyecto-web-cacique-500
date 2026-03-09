@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tienda de Alcohol - Contacto</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-flex">
+            <h1 class="logo"> Tienda de Alcohollllllllllllllllll</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="promociones.html">Promocioness</a></li>
+                    <li><a href="variados.html">Alcoholes Variados</a></li> 
+                    <li><a href="contactanos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contacto-form">
+            <h2>Contacta con Nosotros</h2>
+            <p>Si tienes alguna duda sobre nuestros productos premium o pedidos, rellena el siguiente formulario:</p>
+            
+            <div style="margin-top: 30px;">
+                <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+                    
+                    <div>
+                        <label for="nombre" style="display: block; font-weight: bold; margin-bottom: 5px;">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required 
+                               style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required 
+                                   style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        </div>
+                        <div>
+                            <label for="telefono" style="display: block; font-weight: bold; margin-bottom: 5px;">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" 
+                                   style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="motivo" style="display: block; font-weight: bold; margin-bottom: 5px;">Motivo de la consulta:</label>
+                        <select id="motivo" name="motivo" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                            <option value="pedido">Estado de mi pedido</option>
+                            <option value="informacion">Información de productos</option>
+                            <option value="premium">Consulta sobre licores Premium</option>
+                            <option value="otro">Otros</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mensaje" style="display: block; font-weight: bold; margin-bottom: 5px;">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required 
+                                  style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Roboto', sans-serif;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="datos-directos" style="text-align: center;">
+            <h3>Atención Directa</h3>
+            <p>También puedes escribirnos directamente a:</p>
+            <a href="mailto:cacique500@gmail.com" style="color: var(--primary-color); font-weight: bold; text-decoration: none; font-size: 1.2rem;">cacique500@gmail.com</a>
+            <p style="margin-top: 10px;">Llamadas: <strong>+34 900 123 456</strong></p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 Cazique-500. Prohibida la venta a menores de 18 años.</p>
+    </footer>
+
+    <script>
+        // Verificación de edad (consistencia con index.html)
+        if (!localStorage.getItem("ageVerified")) {
+            window.location.href = "age.html";
+        }
+    </script>
+</body>
+</html>
