@@ -1,78 +1,48 @@
 
 :root {
-
-    --primary-color: #800020; 
-    --secondary-color: #f4e1d2; 
-    --dark-bg: #2c2c2c;
+    --primary-color: #800020; /* Granate/Vino */
+    --secondary-color: #fdf5e6; /* Crema/Old Lace */
+    --dark-bg: #1a1a1a;
     --light-text: #ffffff;
     --dark-text: #333333;
-    --accent-color: #d4af37; 
-    
-
-    --border-radius: 8px;
-    --spacing-std: 20px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    --accent-color: #d4af37; /* Dorado */
+    --section-bg-1: #fff9f0; /* Fondo melocotón muy claro */
+    --section-bg-2: #f2e8df; /* Fondo tierra suave */
+    --border-radius: 12px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color);
     color: var(--dark-text);
-    line-height: 1.6;
+    margin: 0;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-std);
-}
-
+/* Navegación y Header */
 .main-header {
     background-color: var(--dark-bg);
-    color: var(--light-text);
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    position: sticky; 
+    padding: 1.5rem 0;
+    border-bottom: 3px solid var(--accent-color);
+    position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header-flex {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.logo {
- 
-
-    height: 40px; 
-    width: auto;  
-}
-
 
 .main-nav ul {
-    display: flex; 
     list-style: none;
+    display: flex;
     gap: 20px;
 }
 
 .main-nav a {
-    text-decoration: none;
     color: var(--light-text);
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -81,122 +51,348 @@ h1, h2, h3 {
     color: var(--accent-color);
 }
 
-
-main {
-    padding: 40px 0;
-}
-
+/* Fondos por apartados */
 section {
-    margin-bottom: 60px;
-    background: white;
-    padding: 30px;
+    padding: 60px 20px;
+    margin: 20px 0;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-
-.product-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 20px;
-    list-style: none;
+/* Alternancia de colores de fondo para que no sea blanco */
+#ventas, .section-card {
+    background-color: var(--section-bg-1);
 }
 
-.card {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    text-align: center;
-    border-radius: var(--border-radius);
-    font-weight: bold;
-    border: 1px solid #ddd;
-    transition: transform 0.2s;
+#exclusivos, #catalogo {
+    background-color: var(--section-bg-2);
 }
 
-.card:hover {
-    transform: translateY(-5px); 
+#contacto-form, .contact-section {
+    background-color: #e9ecef;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--primary-color);
     border-color: var(--primary-color);
+    transform: translateY(-3px);
 }
 
+/* Tablas Estilizadas */
 .product-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.product-table th, 
-.product-table td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .product-table th {
     background-color: var(--primary-color);
     color: white;
+    padding: 15px;
+}
+
+.product-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer */
+.main-footer {
+    background: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
-.product-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.product-table tr:hover {
-    background-color: #e6e6e6;
+section {
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+
+h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--accent-color);
+    transition: width 0.5s;
+    margin-top: 5px;
+}
+
+section:hover h2::after {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
 }
 
-.modal-content {
+/* Efecto en las letras del Logo */
+.logo {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+#ventas {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80'); /* Imagen de bar de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    border: 1px solid var(--accent-color);
+}
+
+#ventas h2 { color: var(--accent-color); }
+
+/* Sección de Licores Gallegos (Fondo Crema Suave) */
+#exclusivos {
+    background-color: #fdf5e6; /* Old Lace */
+    border-left: 8px solid var(--primary-color);
+}
+
+/* Botón de Promociones Animado */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+.section-card, .product-table {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+.hero-promociones {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+}
+
+.hero-content h1 {
+    color: var(--accent-color);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Tarjetas de ofertas */
+#ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.promo-card {
     background: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: var(--border-radius);
     text-align: center;
-    max-width: 400px;
-    width: 90%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
 }
 
-input[type="date"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 10px 0;
-    width: 100%;
-    font-size: 1rem;
+.promo-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
 }
 
-button {
-    background-color: var(--primary-color);
+.precio {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+/* Cabecera con imagen de fondo para Variados */
+.hero-variados {
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #5a0016; 
-}
-
-.main-footer {
-    background-color: var(--dark-bg);
-    color: #888;
     text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
+    margin-bottom: 40px;
+    border-radius: var(--border-radius);
+}
+
+/* Mejora de la rejilla de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+/* Hero de contacto */
+.hero-contacto {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://images.unsplash.com/photo-1577741314755-048bb8eb2b28?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+}
+
+/* Distribución en dos columnas */
+.contacto-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Mejora del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+}
+
+@media (max-width: 768px) {
+    .contacto-wrapper { grid-template-columns: 1fr; }
+}
+/* --- SECCIONES HERO (Imagen de fondo + Texto Centrado) --- */
+.hero-promociones, .hero-variados, .hero-contacto {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: 40px;
+    position: relative;
+    padding: 20px;
+}
+
+/* Filtro oscuro para que el texto sea legible sobre la imagen */
+.hero-promociones::before, .hero-variados::before, .hero-contacto::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    border-radius: var(--border-radius);
+}
+
+/* Texto sobre las imágenes */
+.hero-promociones h1, .hero-variados h1, .hero-contacto h1 {
+    color: var(--accent-color);
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+}
+
+.hero-promociones p, .hero-variados p, .hero-contacto p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+/* Imágenes específicas para cada página */
+.hero-promociones { 
+    background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80'); 
+}
+.hero-variados { 
+    background-image: url('https://images.unsplash.com/photo-1569529465841-dfecdab7303b?auto=format&fit=crop&q=80'); 
+}
+.hero-contacto { 
+    background-image: url('https://images.unsplash.com/photo-1577741314755-048bb8eb2b28?auto=format&fit=crop&q=80'); 
 }

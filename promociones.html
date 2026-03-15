@@ -8,33 +8,39 @@
     <title>Tienda de Alcohol - Promociones</title>
 </head>
 <body>
-    <header class="main-header">
-        <div class="container header-flex">
-            <h1 class="logo"> Tienda de Alcohol</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#oferta-detalle">Promociones</a></li>
-                    <li><a href="variados.html">Alcoholes Variados</a></li> 
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+<header class="main-header">
+    <div class="container header-flex">
+        <a href="index.html" class="logo-link" style="display: flex; align-items: center; text-decoration: none; color: white;">
+            <img src="imagenes/logo.png" alt="Logo Cacique 500" style="height: 50px; margin-right: 15px;">
+            <h1 style="margin: 0; font-size: 1.5rem;">Cazique 500</h1>
+        </a>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+                <li><a href="variados.html">Variados</a></li> 
+                <li><a href="contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
     <main class="container">
-        <section id="oferta-detalle" class="section-card" style="text-align: center;">
-            <h2> Oferta del Mes: ¡Pack Fiesta!</h2>
-            <div class="offer-details" style="display: flex; justify-content: center; gap: 40px; margin: 30px 0;">
-                <div class="offer-item">
-                    <h3>2x Ron Barceló</h3>
-                    <p>Botella 70cl Añejo</p>
-                </div>
-                <div class="offer-item">
-                    <h3>1x Vodka Absolut</h3>
-                    <p>Botella 70cl Original</p>
-                </div>
-            </div>
+        <section id="hero-promociones" class="hero-promociones">
+    <div class="hero-content">
+        <h1>Ofertas Irresistibles</h1>
+        <p>Selección premium al mejor precio. ¡Solo por tiempo limitado!</p>
+    </div>
+</section>
+
+<section id="ofertas-grid">
+    <div class="promo-card">
+        <h3>Pack Fiesta</h3>
+        <p>2x Ron Barceló + 1x Vodka Absolut</p>
+        <span class="precio">30.00€</span>
+        <button class="btn-primary">Añadir al carrito</button>
+    </div>
+    
             
             <p style="font-size: 2rem; font-weight: bold; color: var(--primary-color);">Precio Final: 30€</p>
 
