@@ -1,8 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xslt/menu-to-html.xsl"?>
- <!DOCTYPE tienda_alcohol SYSTEM "tienda.dtd"> 
-
-
+ <!--  <!DOCTYPE tienda_alcohol SYSTEM "tienda.dtd"> -->
 
 <tienda_alcohol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Tienda_Alcohol.xsd">
 

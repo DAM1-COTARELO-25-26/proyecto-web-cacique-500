@@ -1,47 +1,9 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:annotation>
-    <xs:documentation>
-      Validación para el catálogo de Tienda de Alcohol.
-      Fecha: 2026-01-28.
-      Autor: Cacique500Team
-    </xs:documentation>
-  </xs:annotation>
-
-  <xs:simpleType name="tipoPrecioTexto">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9]+(\.[0-9]{2})?€"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="tipoDisponibilidad">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="TRUE"/>
-      <xs:enumeration value="FALSE"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="tipoDescripcion">
-    <xs:restriction base="xs:string">
-      <xs:minLength value="10"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="tipoIVA">
-    <xs:restriction base="xs:decimal">
-      <xs:totalDigits value="4"/>
-      <xs:fractionDigits value="2"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:complexType name="tipoProducto">
-    <xs:simpleContent>
-      <xs:extension base="tipoDescripcion">
-        <xs:attribute name="precio" type="tipoPrecioTexto" use="required"/>
-        <xs:attribute name="disponible" type="tipoDisponibilidad" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
+  <xs:complexType name="tipoProducto" mixed="true">
+    <xs:attribute name="precio" type="xs:string" use="required"/>
+    <xs:attribute name="disponible" type="xs:string" use="required"/>
   </xs:complexType>
 
   <xs:element name="tienda_alcohol">
@@ -50,8 +12,8 @@
         <xs:element name="alcoholes">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="alcohol_no_premium" type="tipoSeccionNoPremium"/>
-              <xs:element name="alcohol_premium" type="tipoSeccionPremium"/>
+              <xs:element name="alcohol_no_premium" type="tipoSeccion"/>
+              <xs:element name="alcohol_premium" type="tipoSeccion"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -59,78 +21,18 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:complexType name="tipoSeccionNoPremium">
-    <xs:sequence>
-      <xs:element name="rones" type="tipoListaRones"/>
-      <xs:element name="Whiskey" type="tipoListaWhiskey"/>
-      <xs:element name="Licores_Gallegos" type="tipoListaLicores" minOccurs="0"/>
-      <xs:element name="ginebra" type="tipoListaGinebra"/>
-    </xs:sequence>
+  <xs:complexType name="tipoSeccion">
+    <xs:all>
+      <xs:element name="rones" type="tipoLista"/>
+      <xs:element name="Whiskey" type="tipoLista"/>
+      <xs:element name="ginebra" type="tipoLista"/>
+      <xs:element name="Licores_Gallegos" type="tipoLista" minOccurs="0"/>
+    </xs:all>
   </xs:complexType>
 
-  <xs:complexType name="tipoSeccionPremium">
-    <xs:sequence>
-      <xs:element name="rones" type="tipoListaRones"/>
-      <xs:element name="Whiskey" type="tipoListaWhiskey"/>
-      <xs:element name="ginebra" type="tipoListaGinebra"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="tipoListaRones">
+  <xs:complexType name="tipoLista">
     <xs:choice maxOccurs="unbounded">
-      <xs:element name="Barcelo" type="tipoProducto"/>
-      <xs:element name="Cazique" type="tipoProducto"/>
-      <xs:element name="Bumbu" type="tipoProducto"/>
-      <xs:element name="Old_harper" type="tipoProducto"/>
-      <xs:element name="La_Recompensa" type="tipoProducto"/>
-      <xs:element name="Santa_Teresa" type="tipoProducto"/>
-      <xs:element name="Barcelo_Imperial" type="tipoProducto"/>
-      <xs:element name="Cazique_500" type="tipoProducto"/>
-      <xs:element name="Bumbu_Dark" type="tipoProducto"/>
-      <xs:element name="Havana_Club" type="tipoProducto"/>
-      <xs:element name="La_Santisima_Trinidad" type="tipoProducto"/>
-      <xs:element name="Santa_Teresa_1976" type="tipoProducto"/>
-    </xs:choice>
-  </xs:complexType>
-
-  <xs:complexType name="tipoListaWhiskey">
-    <xs:choice maxOccurs="unbounded">
-      <xs:element name="Red_Label" type="tipoProducto"/>
-      <xs:element name="Ballantains" type="tipoProducto"/>
-      <xs:element name="Almirate" type="tipoProducto"/>
-      <xs:element name="Matt_Ken" type="tipoProducto"/>
-      <xs:element name="Pipers_100" type="tipoProducto"/>
-      <xs:element name="Black_Elephant" type="tipoProducto"/>
-      <xs:element name="Black_Label" type="tipoProducto"/>
-      <xs:element name="Jack_Daniels" type="tipoProducto"/>
-      <xs:element name="Jack_Daniels_Honey" type="tipoProducto"/>
-      <xs:element name="Green_Label" type="tipoProducto"/>
-      <xs:element name="Blue_Label" type="tipoProducto"/>
-      <xs:element name="Cardu" type="tipoProducto"/>
-    </xs:choice>
-  </xs:complexType>
-
-  <xs:complexType name="tipoListaLicores">
-    <xs:choice maxOccurs="unbounded">
-      <xs:element name="Licorca" type="tipoProducto"/>
-      <xs:element name="Crema_de_Orujo" type="tipoProducto"/>
-      <xs:element name="Crema_de_Whiskey" type="tipoProducto"/>
-      <xs:element name="Crema_de_Chocolate" type="tipoProducto"/>
-      <xs:element name="Licor_de_Hierbas" type="tipoProducto"/>
-      <xs:element name="Licor_de_Cereza" type="tipoProducto"/>
-    </xs:choice>
-  </xs:complexType>
-
-  <xs:complexType name="tipoListaGinebra">
-    <xs:choice maxOccurs="unbounded">
-      <xs:element name="Dagger" type="tipoProducto"/>
-      <xs:element name="Beefeater" type="tipoProducto"/>
-      <xs:element name="Larios" type="tipoProducto"/>
-      <xs:element name="Glivery" type="tipoProducto"/>
-      <xs:element name="Hendriks" type="tipoProducto"/>
-      <xs:element name="Bulldog" type="tipoProducto"/>
-      <xs:element name="Martin_Millers" type="tipoProducto"/>
-      <xs:element name="The_London" type="tipoProducto"/>
+      <xs:any processContents="skip"/>
     </xs:choice>
   </xs:complexType>
 

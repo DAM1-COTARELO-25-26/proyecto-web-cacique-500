@@ -1,22 +1,13 @@
 <!ELEMENT tienda_alcohol (alcoholes)>
 <!ELEMENT alcoholes (alcohol_no_premium, alcohol_premium)>
 
-<!ELEMENT alcohol_no_premium (rones, Whiskey, Licores_Gallegos?, ginebra)>
+<!ELEMENT alcohol_no_premium (rones, Whiskey, Licores_Gallegos, ginebra)>
 <!ELEMENT alcohol_premium (rones, Whiskey, ginebra)>
 
-<!ELEMENT rones (Barcelo | Cazique | Bumbu | Old_harper | La_Recompensa | Santa_Teresa | 
-                 Barcelo_Imperial | Cazique_500 | Bumbu_Dark | Havana_Club | 
-                 La_Santisima_Trinidad | Santa_Teresa_1976)*>
-
-<!ELEMENT Whiskey (Red_Label | Ballantains | Almirate | Matt_Ken | Pipers_100 | 
-                   Black_Elephant | Black_Label | Jack_Daniels | Jack_Daniels_Honey | 
-                   Green_Label | Blue_Label | Cardu)*>
-
-<!ELEMENT Licores_Gallegos (Licorca | Crema_de_Orujo | Crema_de_Whiskey | 
-                            Crema_de_Chocolate | Licor_de_Hierbas | Licor_de_Cereza)+>
-
-<!ELEMENT ginebra (Dagger | Beefeater | Larios | Glivery | Hendriks | 
-                   Bulldog | Martin_Millers | The_London)*>
+<!ELEMENT rones (Barcelo | Cazique | Bumbu | Old_harper | La_Recompensa | Santa_Teresa | Barcelo_Imperial | Cazique_500 | Bumbu_Dark | Havana_Club | La_Santisima_Trinidad | Santa_Teresa_1976)*>
+<!ELEMENT Whiskey (Red_Label | Ballantains | Almirate | Matt_Ken | Pipers_100 | Black_Elephant | Black_Label | Jack_Daniels | Jack_Daniels_Honey | Green_Label | Blue_Label | Cardu)*>
+<!ELEMENT Licores_Gallegos (Licorca | Crema_de_Orujo | Crema_de_Whiskey | Crema_de_Chocolate | Licor_de_Hierbas | Licor_de_Cereza)*>
+<!ELEMENT ginebra (Dagger | Beefeater | Larios | Glivery | Hendriks | Bulldog | Martin_Millers | The_London)*>
 
 <!ENTITY % attrs "
     precio CDATA #REQUIRED
@@ -28,37 +19,34 @@
 <!ELEMENT Old_harper (#PCDATA)> <!ATTLIST Old_harper %attrs;>
 <!ELEMENT La_Recompensa (#PCDATA)> <!ATTLIST La_Recompensa %attrs;>
 <!ELEMENT Santa_Teresa (#PCDATA)> <!ATTLIST Santa_Teresa %attrs;>
-<!ELEMENT Barcelo_Imperial (#PCDATA)> <!ATTLIST Barcelo_Imperial %attrs;>
-<!ELEMENT Cazique_500 (#PCDATA)> <!ATTLIST Cazique_500 %attrs;>
-<!ELEMENT Bumbu_Dark (#PCDATA)> <!ATTLIST Bumbu_Dark %attrs;>
-<!ELEMENT Havana_Club (#PCDATA)> <!ATTLIST Havana_Club %attrs;>
-<!ELEMENT La_Santisima_Trinidad (#PCDATA)> <!ATTLIST La_Santisima_Trinidad %attrs;>
-<!ELEMENT Santa_Teresa_1976 (#PCDATA)> <!ATTLIST Santa_Teresa_1976 %attrs;>
-
 <!ELEMENT Red_Label (#PCDATA)> <!ATTLIST Red_Label %attrs;>
 <!ELEMENT Ballantains (#PCDATA)> <!ATTLIST Ballantains %attrs;>
 <!ELEMENT Almirate (#PCDATA)> <!ATTLIST Almirate %attrs;>
 <!ELEMENT Matt_Ken (#PCDATA)> <!ATTLIST Matt_Ken %attrs;>
 <!ELEMENT Pipers_100 (#PCDATA)> <!ATTLIST Pipers_100 %attrs;>
 <!ELEMENT Black_Elephant (#PCDATA)> <!ATTLIST Black_Elephant %attrs;>
-<!ELEMENT Black_Label (#PCDATA)> <!ATTLIST Black_Label %attrs;>
-<!ELEMENT Jack_Daniels (#PCDATA)> <!ATTLIST Jack_Daniels %attrs;>
-<!ELEMENT Jack_Daniels_Honey (#PCDATA)> <!ATTLIST Jack_Daniels_Honey %attrs;>
-<!ELEMENT Green_Label (#PCDATA)> <!ATTLIST Green_Label %attrs;>
-<!ELEMENT Blue_Label (#PCDATA)> <!ATTLIST Blue_Label %attrs;>
-<!ELEMENT Cardu (#PCDATA)> <!ATTLIST Cardu %attrs;>
-
 <!ELEMENT Licorca (#PCDATA)> <!ATTLIST Licorca %attrs;>
 <!ELEMENT Crema_de_Orujo (#PCDATA)> <!ATTLIST Crema_de_Orujo %attrs;>
 <!ELEMENT Crema_de_Whiskey (#PCDATA)> <!ATTLIST Crema_de_Whiskey %attrs;>
 <!ELEMENT Crema_de_Chocolate (#PCDATA)> <!ATTLIST Crema_de_Chocolate %attrs;>
 <!ELEMENT Licor_de_Hierbas (#PCDATA)> <!ATTLIST Licor_de_Hierbas %attrs;>
 <!ELEMENT Licor_de_Cereza (#PCDATA)> <!ATTLIST Licor_de_Cereza %attrs;>
-
 <!ELEMENT Dagger (#PCDATA)> <!ATTLIST Dagger %attrs;>
 <!ELEMENT Beefeater (#PCDATA)> <!ATTLIST Beefeater %attrs;>
 <!ELEMENT Larios (#PCDATA)> <!ATTLIST Larios %attrs;>
 <!ELEMENT Glivery (#PCDATA)> <!ATTLIST Glivery %attrs;>
+<!ELEMENT Barcelo_Imperial (#PCDATA)> <!ATTLIST Barcelo_Imperial %attrs;>
+<!ELEMENT Cazique_500 (#PCDATA)> <!ATTLIST Cazique_500 %attrs;>
+<!ELEMENT Bumbu_Dark (#PCDATA)> <!ATTLIST Bumbu_Dark %attrs;>
+<!ELEMENT Havana_Club (#PCDATA)> <!ATTLIST Havana_Club %attrs;>
+<!ELEMENT La_Santisima_Trinidad (#PCDATA)> <!ATTLIST La_Santisima_Trinidad %attrs;>
+<!ELEMENT Santa_Teresa_1976 (#PCDATA)> <!ATTLIST Santa_Teresa_1976 %attrs;>
+<!ELEMENT Black_Label (#PCDATA)> <!ATTLIST Black_Label %attrs;>
+<!ELEMENT Jack_Daniels (#PCDATA)> <!ATTLIST Jack_Daniels %attrs;>
+<!ELEMENT Jack_Daniels_Honey (#PCDATA)> <!ATTLIST Jack_Daniels_Honey %attrs;>
+<!ELEMENT Green_Label (#PCDATA)> <!ATTLIST Green_Label %attrs;>
+<!ELEMENT Blue_Label (#PCDATA)> <!ATTLIST Blue_Label %attrs;>
+<!ELEMENT Cardu (#PCDATA)> <!ATTLIST Cardu %attrs;>
 <!ELEMENT Hendriks (#PCDATA)> <!ATTLIST Hendriks %attrs;>
 <!ELEMENT Bulldog (#PCDATA)> <!ATTLIST Bulldog %attrs;>
 <!ELEMENT Martin_Millers (#PCDATA)> <!ATTLIST Martin_Millers %attrs;>

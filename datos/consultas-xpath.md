@@ -1,6 +1,6 @@
 # Consultas XPath - Tienda de Alcohol
 
-Este archivo contiene las 10 consultas requeridas para la Fase 4, probadas sobre el archivo `alcoholes.xml`.
+
 
 | Tipo | Expresión XPath | Qué selecciona | Resultado esperado |
 | :--- | :--- | :--- | :--- |
